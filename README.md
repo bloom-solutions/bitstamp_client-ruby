@@ -30,6 +30,7 @@ order_book = response.order_book
 order_book.timestamp # unix timestamp
 order_book.bids # Array of Order instances
 order_book.asks # Array of Order instances
+```
 
 For more, see the files in `spec/acceptance`.
 
