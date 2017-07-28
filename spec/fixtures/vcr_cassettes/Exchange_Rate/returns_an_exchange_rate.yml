@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitstamp.net/api/v2/ticker/btcusd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"61775-b9-5555838683837"'
+      Last-Modified:
+      - Fri, 28 Jul 2017 03:24:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '185'
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 28 Jul 2017 03:24:44 GMT
+      Set-Cookie:
+      - "___utmvawoumyLc=JOn\x01dvGT; path=/; Max-Age=900"
+      - ___utmvbwoumyLc=qZg
+      - ___utmvmwoumyLc=xsdQBnsbZVT; path=/; Max-Age=900
+      - incap_ses_552_99025=HyXjNPmhyWgfAsOunBmpB3uuelkAAAAAH0M87eRX9WB4m85XzZI+LQ==;
+        path=/; Domain=.bitstamp.net
+      - visid_incap_99025=zBYYe6a3QB6JjIXIvB2O6nuuelkAAAAAQUIPAAAAAAB+R4l9DYNdz0vQeMzRtseE;
+        expires=Fri, 27 Jul 2018 18:56:28 GMT; path=/; Domain=.bitstamp.net
+      Xbqoralt:
+      - ctU; path=/; Max-Age=900
+      X-Iinfo:
+      - 1-12190142-12179648 2CNN RT(1501212283810 71) q(0 0 0 0) r(0 0)
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"high": "2731.72", "last": "2678.99", "timestamp": "1501212274", "bid":
+        "2676.30", "vwap": "2595.30", "volume": "11921.83803223", "low": "2520.02",
+        "ask": "2678.99", "open": "2666.33"}'
+    http_version: 
+  recorded_at: Fri, 28 Jul 2017 03:24:44 GMT
+recorded_with: VCR 3.0.3

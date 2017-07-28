@@ -14,7 +14,7 @@ module BitstampClient
         buy: json["ask"],
         sell: json["bid"],
         mid_rate: [json["ask"].to_f, json["bid"].to_f].sum / 2,
-        timestampe: json["timestamp"],
+        timestamp: json["timestamp"],
       )
     end
 
