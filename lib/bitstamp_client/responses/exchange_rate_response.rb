@@ -11,8 +11,8 @@ module BitstampClient
     def default_exchange_rate
       json = JSON.parse(body)
       ExchangeRate.new(
-        buy: json["ask"],
-        sell: json["bid"],
+        buy: json["bid"],
+        sell: json["ask"],
         mid_rate: [json["ask"].to_f, json["bid"].to_f].sum / 2,
         timestamp: json["timestamp"],
       )

@@ -17,8 +17,8 @@ module BitstampClient
       it "is the exchange rate model" do
         exchange_rate = response.exchange_rate
         expect(exchange_rate.mid_rate).to eq ([2647.95, 2645.29].sum / 2)
-        expect(exchange_rate.buy).to eq 2647.95
-        expect(exchange_rate.sell).to eq 2645.29
+        expect(exchange_rate.buy).to eq 2645.29
+        expect(exchange_rate.sell).to eq 2647.95
       end
     end
 
