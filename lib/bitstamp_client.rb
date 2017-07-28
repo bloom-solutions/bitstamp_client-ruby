@@ -7,8 +7,10 @@ require "bitstamp_client/models/exchange_rate"
 require "bitstamp_client/models/order"
 require "bitstamp_client/models/order_book"
 require "bitstamp_client/requests/base_request"
+require "bitstamp_client/requests/exchange_rate_request"
 require "bitstamp_client/requests/order_book_request"
 require "bitstamp_client/responses/base_response"
+require "bitstamp_client/responses/exchange_rate_response"
 require "bitstamp_client/responses/order_book_response"
 
 module BitstampClient
