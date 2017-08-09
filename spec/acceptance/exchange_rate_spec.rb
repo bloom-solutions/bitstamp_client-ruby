@@ -11,8 +11,8 @@ RSpec.describe "Exchange Rate" do
     exchange_rate = response.exchange_rate
     expect(exchange_rate.timestamp).to be_an Integer
     expect(exchange_rate.mid_rate).to be_an Float
-    expect(exchange_rate.buy).to be_an Float
-    expect(exchange_rate.sell).to be_an Float
+    expect(exchange_rate.bid).to be_an Float
+    expect(exchange_rate.ask).to be_an Float
   end
 
 end

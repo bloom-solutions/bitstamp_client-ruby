@@ -12,8 +12,8 @@ module BitstampClient
       it { is_expected.to have_attribute(:base_currency, String) }
       it { is_expected.to have_attribute(:counter_currency, String) }
       it { is_expected.to have_attribute(:mid_rate, Float) }
-      it { is_expected.to have_attribute(:buy, Float) }
-      it { is_expected.to have_attribute(:sell, Float) }
+      it { is_expected.to have_attribute(:bid, Float) }
+      it { is_expected.to have_attribute(:ask, Float) }
       it { is_expected.to have_attribute(:timestamp, Integer) }
     end
 
