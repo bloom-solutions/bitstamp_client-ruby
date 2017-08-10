@@ -39,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr", "~> 3.0"
   spec.add_development_dependency "webmock", "~> 2.3"
   spec.add_development_dependency "virtus-matchers", ">= 0.4.0"
+  spec.add_development_dependency "factory_girl"
 end
