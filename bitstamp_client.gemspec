@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ramon.tayag@gmail.com"]
 
   spec.summary       = %q{Ruby wrapper for Bitstamp's API}
-  spec.homepage      = "https://github.com/imacchiato/bitstamp_client-ruby"
+  spec.homepage      = "https://github.com/bloom-solutions/bitstamp_client-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -28,6 +28,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.required_ruby_version = '>= 2.4'
 
   spec.add_dependency "api_client_base", "~> 1.0"
   spec.add_dependency "typhoeus", "~> 1.0"

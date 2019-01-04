@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/sell/market/btcusd/
+    body:
+      encoding: UTF-8
+      string: amount=0.002&key=[key]&nonce=1546506585&signature=095691B87BB38CCEA633D8B4E2108F58CE802259815503595CB73A76C6574720
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Jan 2019 09:09:45 GMT
+      Expires:
+      - Thu, 03 Jan 2019 09:09:45 GMT
+      Last-Modified:
+      - Thu, 03 Jan 2019 09:09:45 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Authorization,Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaPOBumyLc=LIn\x01nJGT; path=/; Max-Age=900"
+      - '___utmvbPOBumyLc=sZP XDIOsala: jtC; path=/; Max-Age=900'
+      - ___utmvmPOBumyLc=HgjRkXYssfW; path=/; Max-Age=900
+      - incap_ses_1225_99025=zg6zCPIGbDQOisjWCxMAEVnRLVwAAAAA9b0RmJfokTF+TQ68QN8viw==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=TK4SXfvCq0thzXfT8F1n9AAAAACEVNIAljnY0u+0t8iTl2yc; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=tnkAcRi1QeqlwgXrzzzYulnRLVwAAAAAQUIPAAAAAAD7uZ5KiC0nojWqPljIC2ns;
+        expires=Fri, 03 Jan 2020 08:15:44 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 14-213093892-213093052 PNNN RT(1546506585252 134) q(0 0 0 -1) r(4 4) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"price": "3828.56", "amount": "0.00200000", "type": "1", "id": "2668790681",
+        "datetime": "2019-01-03 09:09:45.734317"}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 09:09:45 GMT
+recorded_with: VCR 3.0.3

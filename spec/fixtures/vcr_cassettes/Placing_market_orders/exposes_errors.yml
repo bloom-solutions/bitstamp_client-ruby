@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/sell/market/btcusd/
+    body:
+      encoding: UTF-8
+      string: amount=0.002&key=[key]&nonce=abc&signature=EE8ED143E0F45DED5D961C10660D4C028F38BC26F475BEC114C438FB6EC623EF
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Expect:
+      - ''
+  response:
+    status:
+      code: 403
+      message: Authentication Failed
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Jan 2019 09:15:48 GMT
+      Expires:
+      - Thu, 03 Jan 2019 09:15:48 GMT
+      Last-Modified:
+      - Thu, 03 Jan 2019 09:15:48 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Authorization,Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaPOBumyLc=uui\x01tyQS; path=/; Max-Age=900"
+      - '___utmvbPOBumyLc=BZu XQoOhalp: gtz; path=/; Max-Age=900'
+      - ___utmvmPOBumyLc=jFLrocqyjIY; path=/; Max-Age=900
+      - incap_ses_1225_99025=z8RUHu1jSktBR8nWCxMAEcTSLVwAAAAApeBjo1VCvkCGA1RQdnIghw==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=H/Fwa0oN3zVDPKAn8F1n9AAAAAAvNqus8MsCT+e+N1ekvRsC; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=Ex1h5eRGRQGGbSC17Ar3I8TSLVwAAAAAQUIPAAAAAACoiTqMeFI8JWeMv5nQxdms;
+        expires=Fri, 03 Jan 2020 08:15:44 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 14-213145322-213143288 PNNN RT(1546506947949 127) q(0 0 0 -1) r(3 3) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"status": "error", "reason": "Invalid nonce", "code": "API0004"}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 09:15:48 GMT
+recorded_with: VCR 3.0.3
