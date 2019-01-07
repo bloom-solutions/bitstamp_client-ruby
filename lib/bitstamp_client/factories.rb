@@ -23,4 +23,12 @@ FactoryBot.define do
     volume { 2 }
   end
 
+  factory :bitstamp_client_market_order, class: "BitstampClient::MarketOrder" do
+    sequence(:id) {|n| n}
+    datetime { DateTime.now }
+    type { "0" }
+    price { 4000.99 }
+    amount { 0.01 }
+  end
+
 end
