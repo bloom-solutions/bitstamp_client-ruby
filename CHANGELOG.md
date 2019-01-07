@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Factories updated to FactoryBot
 
+### Added
+- `MarketOrder` `#buy` and `#sell`
+
 ## [1.0.1] - 2019-01-07
 ### Fixed
 - All responses are not successful when Bitstamp's response has a `status` key
