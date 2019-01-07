@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- Factories updated to FactoryBot
+
 ## [1.0.1] - 2019-01-07
 ### Fixed
 - All responses are not successful when Bitstamp's response has a `status` key
