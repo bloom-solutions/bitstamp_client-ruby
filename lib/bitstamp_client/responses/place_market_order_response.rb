@@ -7,7 +7,6 @@ module BitstampClient
     })
     attribute :status, String, lazy: true, default: :default_status
     attribute :reason, String, lazy: true, default: :default_reason
-    attribute :parsed_body, Hash, lazy: true, default: :default_parsed_body
 
     private
 
@@ -21,10 +20,6 @@ module BitstampClient
 
     def default_reason
       parsed_body["reason"]
-    end
-
-    def default_parsed_body
-      JSON.parse(body)
     end
 
   end
