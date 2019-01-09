@@ -9,6 +9,7 @@ module BitstampClient
     api_action :order_book, args: [:currency_pair]
     api_action :exchange_rate, args: [:currency_pair]
     api_action :place_market_order
+    api_action :balance
 
     private
 
