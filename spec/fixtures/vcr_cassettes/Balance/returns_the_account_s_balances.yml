@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/balance/
+    body:
+      encoding: UTF-8
+      string: key=[key]&nonce=1547008527591&signature=6146B494C9F381C9ED711C88402F7D33F7DE64C2D33095C559551A501E33389B
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 09 Jan 2019 04:35:28 GMT
+      Expires:
+      - Wed, 09 Jan 2019 04:35:28 GMT
+      Last-Modified:
+      - Wed, 09 Jan 2019 04:35:28 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Authorization,Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvazvumyLc=qKF\x01YcHO; path=/; Max-Age=900"
+      - '___utmvbzvumyLc=UZO XqsOhalx: itj; path=/; Max-Age=900'
+      - ___utmvmzvumyLc=fxRndDaLNdI; path=/; Max-Age=900
+      - incap_ses_407_99025=pSJlM//cjkdxtcj5R/alBQ96NVwAAAAAFRY2cwyR37okvbfJRUsa9Q==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=6zQaP90cSgEgj93g8F1n9AAAAABA/cNF58YmVJvISAa4XOCi; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=ID3jCBLEQVyyHCOPmePEHw96NVwAAAAAQUIPAAAAAAAmj5nqfoFmR9cC8VQ0H4+O;
+        expires=Wed, 08 Jan 2020 07:53:47 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 10-260036521-260033629 PNNN RT(1547008526925 186) q(0 0 0 0) r(3 3) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"bch_available": "0.00000000", "bch_balance": "0.00000000", "bch_reserved":
+        "0.00000000", "bchbtc_fee": "0.13", "bcheur_fee": "0.13", "bchusd_fee": "0.13",
+        "btc_available": "0.00970000", "btc_balance": "0.00970000", "btc_reserved":
+        "0.00000000", "btceur_fee": "0.13", "btcusd_fee": "0.13", "eth_available":
+        "0.00000000", "eth_balance": "0.00000000", "eth_reserved": "0.00000000", "ethbtc_fee":
+        "0.13", "etheur_fee": "0.13", "ethusd_fee": "0.13", "eur_available": "0.00",
+        "eur_balance": "0.00", "eur_reserved": "0.00", "eurusd_fee": "0.13", "ltc_available":
+        "0.00000000", "ltc_balance": "0.00000000", "ltc_reserved": "0.00000000", "ltcbtc_fee":
+        "0.13", "ltceur_fee": "0.13", "ltcusd_fee": "0.13", "usd_available": "1.08",
+        "usd_balance": "1.08", "usd_reserved": "0.00", "xrp_available": "0.00000000",
+        "xrp_balance": "0.00000000", "xrp_reserved": "0.00000000", "xrpbtc_fee": "0.13",
+        "xrpeur_fee": "0.13", "xrpusd_fee": "0.13"}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 04:35:28 GMT
+recorded_with: VCR 3.0.3
