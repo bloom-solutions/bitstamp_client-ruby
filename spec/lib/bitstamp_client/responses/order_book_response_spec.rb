@@ -24,6 +24,12 @@ module BitstampClient
         expect(first_ask.rate).to eq 1209.9
         expect(first_ask.volume).to eq 1.08397861
       end
+
+      context "parsed_body is nil" do
+        let(:response) { described_class.new(parsed_body: nil) }
+        subject(:order_book) { response.order_book}
+        it { is_expected.to be_nil }
+      end
     end
 
   end

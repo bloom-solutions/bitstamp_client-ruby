@@ -20,5 +20,15 @@ module BitstampClient
       it { is_expected.to_not be_success }
     end
 
+    describe "#parsed_body" do
+      context "body isn't json" do
+        let(:response) do
+          described_class.new(body: "<html>Some error</html>")
+        end
+        subject(:parsed_body) { response.parsed_body}
+        it { is_expected.to be_nil }
+      end
+    end
+
   end
 end
