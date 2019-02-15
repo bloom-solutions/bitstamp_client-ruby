@@ -17,6 +17,7 @@ module BitstampClient
 
     def default_parsed_body
       JSON.parse(body)
+    rescue JSON::ParserError
     end
 
   end

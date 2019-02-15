@@ -9,7 +9,8 @@ module BitstampClient
     private
 
     def default_order_book
-      OrderBook.new(JSON.parse(body))
+      return nil if parsed_body.nil?
+      OrderBook.new(parsed_body)
     end
 
   end

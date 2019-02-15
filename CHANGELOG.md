@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- OrderBook: do not blow up with `JSON::ParserError` when response isn't JSON
+
 ## [1.2.0] - 2019-01-09
 ### Added
 - Add `balance` API call to get balances
