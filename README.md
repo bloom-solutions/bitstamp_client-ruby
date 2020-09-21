@@ -1,8 +1,6 @@
 # BitstampClient
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bitstamp_client`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+API wrapper for Bitstamp.
 
 ## Installation
 
@@ -23,6 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+# Orderbook
 client = BitstampClient.new
 response = client.order_book("btcusd")
 response.success? # true
@@ -30,6 +29,16 @@ order_book = response.order_book
 order_book.timestamp # unix timestamp
 order_book.bids # Array of Order instances
 order_book.asks # Array of Order instances
+```
+
+```ruby
+# Balance
+client = BitstampClient.new
+response = client.balance(nonce: ...)
+response.success? # true
+
+response.usd_balance  # BigDecimal
+response.btc_reserved # BigDecimal
 ```
 
 For more, see the files in `spec/acceptance`.
