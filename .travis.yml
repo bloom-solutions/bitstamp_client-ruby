@@ -1,7 +1,0 @@
-sudo: false
-language: ruby
-rvm:
-  - 2.5.3
-before_script:
-  - cp spec/config.yml{.sample,}
-before_install: gem install bundler -v 1.14.6
