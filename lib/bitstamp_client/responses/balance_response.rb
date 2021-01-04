@@ -27,7 +27,7 @@ module BitstampClient
       attribute field, BigDecimal, default: :"default_#{field}"
 
       define_method :"default_#{field}" do
-        parsed_body[field.to_s]
+        parsed_body[field.to_s] if parsed_body.present?
       end
     end
 
