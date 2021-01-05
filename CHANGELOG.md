@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - `BalanceResponse` now returns fields, only if `parsed_body` is present
 - Update bundler and ruby versions
+- Moved away from `config.yml` variables to `ENV` variables
+- Added initial Github action for running tests
 
 ## [1.2.1] - 2019-02-15
 ### Fixed
