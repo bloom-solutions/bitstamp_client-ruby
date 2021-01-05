@@ -4,7 +4,11 @@ RSpec.describe "Placing market orders" do
 
   it "places a buy market order", vcr: {record: :once} do
     nonce = Time.now.to_i
-    client = BitstampClient.new(CONFIG.slice(:key, :secret, :customer_id))
+    client = BitstampClient.new(
+      key: ENV["KEY"],
+      secret: ENV["SECRET"],
+      customer_id: ENV["CUSTOMER_ID"],
+    )
 
     response = client.place_market_order(
       trade_type: "buy",
@@ -26,7 +30,11 @@ RSpec.describe "Placing market orders" do
 
   it "places a sell market order", vcr: {record: :once} do
     nonce = Time.now.to_i
-    client = BitstampClient.new(CONFIG.slice(:key, :secret, :customer_id))
+    client = BitstampClient.new(
+      key: ENV["KEY"],
+      secret: ENV["SECRET"],
+      customer_id: ENV["CUSTOMER_ID"],
+    )
 
     response = client.place_market_order(
       trade_type: "sell",
@@ -48,7 +56,11 @@ RSpec.describe "Placing market orders" do
 
   it "exposes errors", vcr: {record: :once} do
     nonce = "abc"
-    client = BitstampClient.new(CONFIG.slice(:key, :secret, :customer_id))
+    client = BitstampClient.new(
+      key: ENV["KEY"],
+      secret: ENV["SECRET"],
+      customer_id: ENV["CUSTOMER_ID"],
+    )
 
     response = client.place_market_order(
       trade_type: "sell",
