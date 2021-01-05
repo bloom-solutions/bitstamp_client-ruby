@@ -10,6 +10,13 @@ module BitstampClient
       end
     end
 
+    context "parsed_body nil from JSON.parse error" do
+      it "returns no value if parsed_body is nil" do
+        response = described_class.new(body: {}.to_json)
+        expect(response.usd_balance).to be_nil
+      end
+    end
+
     it "exposes unknown fields" do
       body = {
         some_new_field_that_bitstamp_added: 1,

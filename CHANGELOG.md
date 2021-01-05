@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [TBA]
+### Changed
+- `BalanceResponse` now returns fields, only if `parsed_body` is present
+- Update bundler and ruby versions
+- Moved away from `config.yml` variables to `ENV` variables
+- Added initial Github action for running tests
+
 ## [1.2.1] - 2019-02-15
 ### Fixed
 - OrderBook: do not blow up with `JSON::ParserError` when response isn't JSON

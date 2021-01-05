@@ -3,7 +3,11 @@ require 'spec_helper'
 RSpec.describe "Balance" do
 
   it "returns the account's balances", vcr: {record: :once} do
-    client = BitstampClient.new(CONFIG.slice(:key, :secret, :customer_id))
+    client = BitstampClient.new(
+      key: ENV["KEY"],
+      secret: ENV["SECRET"],
+      customer_id: ENV["CUSTOMER_ID"],
+    )
     response = client.balance(nonce: (Time.now.to_f * 1_000).to_i)
 
     expect(response).to be_success

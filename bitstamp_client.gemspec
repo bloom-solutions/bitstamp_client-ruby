@@ -34,12 +34,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency "api_client_base", "~> 1.0"
   spec.add_dependency "typhoeus", "~> 1.0"
 
-  spec.add_development_dependency "bundler", "~> 1.14"
+  spec.add_development_dependency "bundler", "~> 2.2"
+  spec.add_development_dependency "dotenv", "~> 2.7"
+  spec.add_development_dependency "factory_bot"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.5"
   spec.add_development_dependency "rspec-its", "~> 1.2"
   spec.add_development_dependency "vcr", "~> 3.0"
-  spec.add_development_dependency "webmock", "~> 2.3"
   spec.add_development_dependency "virtus-matchers", ">= 0.4.0"
-  spec.add_development_dependency "factory_bot"
+  spec.add_development_dependency "webmock", "~> 2.3"
 end
