@@ -43,6 +43,11 @@ module BitstampClient
 
     private
 
+    def default_success
+      return false if !parsed_body.present?
+
+      super
+    end
 
     def default_order_book
       OrderBook.new(JSON.parse(body))
