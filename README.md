@@ -45,7 +45,7 @@ For more, see the files in `spec/acceptance`.
 
 ## Development
 
-- Setup `spec/config.yml` (see `spec/config.yml.sample`). Since Bitstamp does not have a test API, you'll need to put real credentials for the tests here. Best to create a subaccount that has a limited set of funds.
+- Make a copy of `.env` and name it `.env.local`
 - Make changes
 - `rspec spec` to run the specs
 
