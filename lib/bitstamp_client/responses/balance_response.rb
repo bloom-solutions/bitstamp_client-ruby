@@ -35,7 +35,7 @@ module BitstampClient
       super if !parsed_body.has_key?(method_name.to_s)
 
       self.class.define_method(method_name) do
-        BigDecimal.new(parsed_body[method_name.to_s])
+        BigDecimal(parsed_body[method_name.to_s])
       end
 
       self.send(method_name)
