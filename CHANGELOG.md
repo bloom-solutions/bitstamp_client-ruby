@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.4] - 2021-02-01
+### Fixed
+- Compatibility with Ruby 2.7+ (where `BigDecimal.new` has been removed)
+
 ## [1.2.3] - 2021-01-06
 ### Changed
 - `BalanceResponse#success?` first checks if `parsed_body` is present
